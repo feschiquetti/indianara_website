@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Rio do Sul - SC - Indianara Carolina Emke é especialista em inovadoras técnicas de arquitetura, planejamento urbano, paisagismo e design de interiores. Explore o nosso portfólio e entre em contato novos projetos e eventuais dúvidas"/>
+<script src="./removeBanner.js"></script>
+
+
+
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Indianara Carolina Emke",
+      "url": "http://www.indianara.arq.br/",
+      "logo": "http://www.indianara.arq.br/Images/logo.png",
+      "sameAs": [
+        "http://www.https://www.behance.net/indianaraarq/",
+        "https://www.instagram.com/indianara.arq/",
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-47-98902-4911",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'YOUR_TRACKING_ID');
+</script>
+
+
+
+
+<title>Indianara Arquitetura</title>
+<style>
+
+
+@font-face {
+    font-family: 'Leelawadee';
+    src: url('font/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-family: 'Leelawadee', sans-serif;
+    background-image: url('Images/bg.png'); /* Update with the path to your image */
+    background-position: right bottom; /* Align the background to the bottom-right corner */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Optional: Keeps the background fixed during scroll */
+    background-size: 100%;
+    overflow: hidden; /* Prevents the body from scrolling */
+}
+
+.grid-item:nth-child(3),
+.grid-item:nth-child(4) {
+    background-color: rgb(233, 233, 233); /* Set the background color */
+}
+
+.grid-item:nth-child(3){
+    position: relative; /* Enables absolute positioning for children */
+    padding: 1em; /* Adjust the padding as needed */
+}
+
+@media (min-width: 480px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-gap: 0.2vw; /* Gap based on viewport width */
+        width: 70vh; /* Set width to be a percentage of the viewport width */
+        height: 70vh; /* Height is the same as width to maintain aspect ratio */
+        justify-content: center;
+        align-content: center;
+        box-sizing: border-box;
+    }
+
+    .grid-item {
+        background: #969696;
+        aspect-ratio: 1 / 1; /* Keeps the item a square */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        overflow: hidden; /* Ensures content doesn't overflow the grid item */
+    }
+
+    .grid-item img {
+        width: 103%;
+        height: 103%;
+        object-fit: cover; /* Ensures the image covers the square, may be cropped */
+    }
+
+    /* CARD 3 - TITLE */ 
+
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .title-container h1 {
+        font-size: 1.8em; /* Adjust based on your design */
+        font-weight: bold; /* Adjust if your font is different */
+        text-transform: uppercase;
+        line-height: 1.2; /* Adjust based on your design */
+        letter-spacing: 0.03em; /* Adjust based on your design */
+        color: #797979; /* This should be the color of your text */
+        margin: 0;
+        padding: 0.5em;
+        position: absolute;
+        top: 0; /* Align to the top */
+        right: 0; /* Align to the right */
+        text-align: right; /* Text align right for the content */
+    }
+
+    /* CARD 4 - LOGO*/
+
+    .logo-container {
+        display: flex;
+        padding: 0em;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100%; /* Take full height of the grid item */
+        background-color: rgb(233, 233, 233); /* Same background as the third item, adjust if necessary */
+    }
+
+    .logo-container img {
+        max-width: 60%; /* Set to a percentage less than 100% to make the logo smaller */
+        max-height: 60%; /* Adjust the percentage as needed */
+        /* Optional: If you want to set a maximum size, you can use actual dimensions like this:
+        width: 150px; 
+        height: auto; 
+        */
+        object-fit: contain; /* This will ensure the aspect ratio is maintained */
+    }
+
+    /* CARD 9 - CONTACT */ 
+
+    .contact-info {
+        background-color: #797979 ; /* The background color */
+        color: #fff; /* The text color */
+        font-size: 0.9em; /* Adjust based on your design */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Keeps text aligned to the right */
+        justify-content: flex-start; /* Aligns content to the top */
+        height: 100%;
+        position: relative;
+    }
+
+    .contact-info .info {
+        align-self: flex-start; /* Align the text block to the top-right */
+        width: 100%; /* Full width to respect the padding */
+        padding-top: 1em;
+        margin-bottom: auto; /* Pushes everything else down */
+        line-height: 1.2; /* Adjust based on your design */
+        letter-spacing: 0.03em; /* Adjust based on your design */
+    }
+
+    .contact-info .info p {
+        text-align: right; /* Align text to the right within the paragraph */
+        margin: 0;
+        padding-right: 1em;
+    }
+
+    .contact-info .social-media {
+        position: absolute; /* Position the icons absolutely within the contact-info */
+        bottom: 1em; /* 1em from the bottom */
+        right: 1em; /* 1em from the right */
+        display: flex;
+        gap: 0.5em; /* Adjust the gap between icons as needed */
+    }
+
+    .contact-info .social-media img {
+        width: 50px; /* Size of icons, adjust as needed */
+        height: 35px; /* Size of icons, adjust as needed */
+        object-fit: contain; 
+    }
+
+}
+
+
+  /* TABLETS */
+
+  @media (max-height: 1000px) {
+
+.contact-info {
+    font-size: 0.7em; /* Adjust based on your design */
+}
+
+}
+
+@media (max-height: 800px) {
+
+    .title-container h1 {
+        font-size: 1.3em; /* Adjust based on your design */
+
+    }
+
+    .contact-info {
+        font-size: 0.5em; /* Adjust based on your design */
+    }
+
+    .contact-info .social-media img {
+        width: 25px; /* Size of icons, adjust as needed */
+        height: 15px; /* Size of icons, adjust as needed */
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile styles */
+
+@media (max-width: 480px) {
+    /* Adjust the grid container for a two-column layout */
+
+
+    body, html {
+    padding: 25px;
+    overflow: auto;
+    background-image: none !important; /* Hides the background image on mobile devices */
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for mobile */
+        grid-gap: 1vw; /* Gap based on viewport width */
+        width: 100vh; /* Set width to be a percentage of the viewport width */
+        height: 100vh; /* Height is the same as width to maintain aspect ratio */
+        justify-content: center;
+    align-content: center;
+        box-sizing: border-box;
+    }
+
+    .grid-item {
+        background: #969696;
+        aspect-ratio: 1 / 1; /* Keeps the item a square */
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        overflow: hidden; /* Ensures content doesn't overflow the grid item */
+        position: relative;
+        width: 100%; /* Full width of the grid column */
+        box-sizing: border-box;
+        aspect-ratio: 1 / 1; /* Keeps the item a square */
+    }
+
+    .grid-item::before {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .grid-item img {
+        width: 103%;
+        height: 103%;
+        object-fit: cover; /* Ensures the image covers the square, may be cropped */
+    }
+
+    /* Hide specific grid items */
+    .grid-item:nth-child(2), /* Example: hiding the second grid item */
+    .grid-item:nth-child(6),
+    .grid-item:nth-child(7),
+    .grid-item:nth-child(8) {/* Example: hiding the second grid item */
+        display: none;
+    }
+    
+    /* Span the third grid item across both columns */
+    .grid-item:nth-child(9) {
+        grid-column: 1 / -1; /* Span from the first to the last line */
+    }
+
+    .grid-item:nth-child(1) {
+        order: 1; /* Set a high order value to move it to the end */
+    }
+
+    .grid-item:nth-child(4) {
+        order: 2; /* Set a high order value to move it to the end */
+    }
+
+    .grid-item:nth-child(3) {
+        order: 3; /* Set a high order value to move it to the end */
+    }
+
+    .grid-item:nth-child(5) {
+        order: 4; /* Set a high order value to move it to the end */
+    }
+
+    .grid-item:nth-child(7) {
+        order: 5; /* Set a high order value to move it to the end */
+    }
+
+    .grid-item:nth-child(8) {
+        order: 6; /* Set a high order value to move it to the end */
+    }
+
+    .grid-item:nth-child(9) {
+        order: 7; /* Set a high order value to move it to the end */
+    }
+
+  
+    /* CARD 3 - TITLE MOBILE*/
+
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .title-container h1 {
+        font-size: 0.9em; /* Adjust based on your design */
+        font-weight: bold; /* Adjust if your font is different */
+        text-transform: uppercase;
+        line-height: 1.2; /* Adjust based on your design */
+        letter-spacing: 0.03em; /* Adjust based on your design */
+        color: #797979; /* This should be the color of your text */
+        margin: 0;
+        padding: 0.7em;
+        position: absolute;
+        top: 0; /* Align to the top */
+        right: 0; /* Align to the right */
+        text-align: right; /* Text align right for the content */
+    }
+
+    /* CARD 4 - LOGO */
+
+    .logo-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100%; /* Full height of the grid item */
+        width: 100%; /* Full width of the grid item */
+        background-color: rgb(233, 233, 233); /* Background color */
+    }
+
+    .logo-container img {
+        max-width: 70%; /* Allows the image to scale up to 90% of the container's width */
+        max-height: 70%; /* Allows the image to scale up to 90% of the container's height */
+        object-fit: contain; /* Maintains the aspect ratio without cropping the image */
+        display: block; /* Removes any default inline styling */
+        margin: auto;
+    }
+
+    /* CARD 9 - CONTACT */ 
+
+    .contact-info {
+        background-color: #797979 ; /* The background color */
+        color: #fff; /* The text color */
+        font-size: 0.9em; /* Adjust based on your design */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+    }
+
+    .contact-info .info {
+        align-self: flex-start; /* Align the text block to the top-right */
+        width: 100%; /* Full width to respect the padding */
+        padding-top: 1em;
+        margin-bottom: auto; /* Pushes everything else down */
+        line-height: 1.2; /* Adjust based on your design */
+        letter-spacing: 0.03em; /* Adjust based on your design */
+    }
+
+    .contact-info .info p {
+        text-align: right; /* Align text to the right within the paragraph */
+        margin: 0;
+        padding-right: 1em;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff; /* The text color */
+    }
+
+    .contact-info .social-media {
+        position: absolute; /* Position the icons absolutely within the contact-info */
+        bottom: 1em; /* 1em from the bottom */
+        right: 1em; /* 1em from the right */
+        display: flex;
+        gap: 0.5em; /* Adjust the gap between icons as needed */
+    }
+
+    .contact-info .social-media img {
+        width: 60px; /* Size of icons, adjust as needed */
+        height: 35px; /* Size of icons, adjust as needed */
+        object-fit: contain; 
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="grid-container">
+    <!-- Example of a grid item with an image and a link -->
+    <div class="grid-item">
+        <a href="https://www.behance.net/gallery/188642917/RESIDENCIA-MG">
+            <img src="Images/img1.png" alt="Primeira imagem de render 3d representando projeto arquitetônico de Indianara Carolina Emke">
+        </a>
+    </div>
+    <div class="grid-item">
+            <img src="Images/img2.png" alt="Segunda imagem de render 3d representando projeto arquitetônico de Indianara Carolina Emke">
+    </div>
+    <div class ="grid-item">
+        <div class="title-container">
+            <h1>INDIANARA ARQUITETURA E DESIGN</h1>
+        </div>
+        <!-- Other content for the third item can go here -->
+    </div>
+    <div class="grid-item logo-container">
+        <img src="Images/logo.png" alt="Studio Logo - Logo do estúdio" /> <!-- Replace 'logo.png' with the path to your logo file -->
+        <!-- Any other content for the fourth item can go here -->
+    </div>
+    <div class="grid-item">
+        <a href="https://www.behance.net/gallery/188634427/INTERIORES-RES-CH-SOCIAL">
+            <img src="Images/img3.png" alt="Terceira imagem de render 3d representando projeto arquitetônico de Indianara Carolina Emke">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.behance.net/gallery/90499673/RESIDENCIA-DD">
+            <img src="Images/img4.png" alt="Quarta imagem de render 3d representando projeto arquitetônico de Indianara Carolina Emke">
+        </a>
+    </div>
+    <div class="grid-item">
+            <img src="Images/img5.png" alt="Quinta imagem de render 3d representando projeto arquitetônico de Indianara Carolina Emke">
+    </div>
+    <div class="grid-item">
+        <a href="https://www.behance.net/gallery/188645411/INTERIORES-ZE-SOCIAL">
+            <img src="Images/img6.png" alt="Sexta imagem de render 3d representando projeto arquitetônico de Indianara Carolina Emke">
+        </a>
+    </div>
+    <div class="grid-item contact-info">
+        <div class="info">
+            <p class="name">INDIANARA CAROLINA EMKE</p>
+            <p class="profession">ARQUITETURA, URBANISMO E INTERIORES</p>
+            <p class="registration">CAU: A157362-4</p>
+            <br> <!-- Line break for spacing -->
+            <p class="phone">+55 47 9 8902-4911</p>
+            <p class="email">indianara-carolina@hotmail.com</p>
+            <br> <!-- Line break for spacing -->
+            <p class="location">Rio do Sul, Santa Catarina</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.behance.net/indianaraarq">
+                <img src="Images/behance-icon.png" alt="Behance">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5547989024911&text&type=phone_number&app_absent=0">
+                <img src="Images/whatsapp-icon.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/indianara.arq/">
+                <img src="Images/instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    <!-- Repeat the above block for each item in your portfolio -->
+</div>
+
+
+
+</body>
+</html>
